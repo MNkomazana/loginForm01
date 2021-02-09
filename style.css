@@ -50,6 +50,53 @@ body{
 .createAccount a{
     color:rgb(189, 189, 37);
 }
+/* Create Account Page */
+.container{
+    background-color:#303841;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.accountForm{
+    background-color:#565a5e;
+    color:rgba(228, 179, 20, 0.849);
+    border-radius:6px;
+    outline:none;
+    box-shadow:3px 3px 10px 3px #000;
+}
+.accountForm div{
+    margin:20px;
+    padding:10px;
+}
+.accountForm input{
+    width:350px;
+    height:2em;
+    outline:none;
+    margin-top:3px;
+    padding:10px;
+}
+.accountForm input:focus{
+    outline:none;
+    box-shadow: ;
+}
+.accountForm button{
+    width:350px;
+    height:2.5em;
+    font-size:22px;
+    font-weight:bold;
+    border-radius:30px;
+    border:transparent;
+    outline:none;
+    background-color:rgba(228, 179, 20, 0.849);
+}
+
+
+
+
+
+
 @media screen and (max-width: 600px){
     
     .form input,
