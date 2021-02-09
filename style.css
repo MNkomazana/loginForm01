@@ -45,7 +45,14 @@ body{
     color:rgb(189, 189, 37);
 }
 @media screen and (max-width: 600px){
+    
     .form input{
-        width:100%;
+        max-width:80%;
+    }
+    .login{
+        max-width:80%;
+    }
+    .createAccount{
+        max-width:80%;
     }
 }
