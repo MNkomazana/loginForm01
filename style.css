@@ -1,3 +1,6 @@
+:root{
+    --dark_bg:#303841;
+}
 *{
     margin:0;
     padding:0;
@@ -8,6 +11,42 @@ body{
     font-family:sans-serif,Helvetica,Arial;
     font-size:18px;
 }
+/* index page */
+.container{
+    height:100vh;
+    background-color:var(--dark_bg);
+    z-index:1;
+    opacity:0.5;
+}
+.welcome{
+    height:100vh;
+    background-image:url('images/joypad.jpg');
+    background-position: center;
+    background-size:cover;
+    background-origin:center;
+    color:rgba(228, 179, 20, 0.849);
+    z-index: -0.5;
+}
+.navChoice{
+    text-align:right;
+    padding:10px;
+}
+.navChoice a{
+    text-decoration:none;
+    color:rgba(228, 179, 20, 0.849);
+    text-transform: uppercase;
+    font-weight:bold;
+}
+.navChoice li{
+    display:inline-block;
+    margin:0 15px;
+    list-style: none;
+}
+.welcomeNote{
+    width:50%;
+    padding:20px;
+}
+/* Login Page */
 .container{
     display:flex;
     flex-direction:column;
@@ -55,7 +94,7 @@ body{
 }
 /* Create Account Page */
 .container{
-    background-color:#303841;
+    background-color:var(--dark_bg);
     height:100vh;
     display:flex;
     flex-direction:column;
