@@ -41,6 +41,9 @@ body{
     margin-top:15px;
     margin-bottom:15px;
 }
+.container .branding h1{
+    font-size:23px;
+}
 .createAccount{
     margin-top:10px;
 }
