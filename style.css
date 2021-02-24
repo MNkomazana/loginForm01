@@ -20,7 +20,7 @@ body{
     opacity:0.7;
 }
 .welcome{
-    height:100vh;
+    min-height:100vh;
     background-image:url('images/joypad.jpg');
     background-position: center;
     background-size:cover;
@@ -31,9 +31,10 @@ body{
 }
 .welWrapper{
     width:80%;
-    height:80%;
+    max-height:100%;
     margin:auto;
     align-items:center;
+    justify-content:center;
 }
 .navChoice{
     text-align:right;
@@ -64,7 +65,7 @@ body{
 }
 
 .welcomeNote{
-    width:50%;
+    width:100%;
     padding:20px;
 }
 /* Login Page */
@@ -128,19 +129,22 @@ body{
     border-radius:6px;
     outline:none;
     box-shadow:3px 3px 10px 3px #000;
-    width:40%;
+    width:50%;
+    min-height:60vh;
 }
 .inputField{
-    width:50%;
+    width:100%;
     margin:auto;
 }
 .inputField div{
     width:100%;
     display:block;
-    margin:20px 0;
+    margin:20px auto;
 }
 .accountForm form{
     padding:10px;
+    width:60%;
+    margin:auto;
 }
 .inputField input{
     width:100%;
@@ -165,6 +169,7 @@ body{
 }
 .branding{
     display:flex;
+    flex-wrap:wrap;
     flex-direction:row;
     justify-content: center;
     align-items: center;
