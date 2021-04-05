@@ -6,7 +6,7 @@ function checkForm(){
 
     if(email==""){
          let strMsge = document.getElementById("emailErr");
-         strMsge.innerHTML = "Field cannot be empty";
+         strMsge.innerHTML = "Email/username cannot be empty";
     }else{
        strMsge.innerHTML ="Details Successfully Captured";
     }
