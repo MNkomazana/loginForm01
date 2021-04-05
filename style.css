@@ -81,17 +81,18 @@ body{
 .form{
     padding:20px;
 }
-.form input{
+.form input[type=email],
+.form input[type=password]{
     width:300px;
     height:2em;
     padding:10px;
     margin-top:10px;
-    margin-bottom:10px;
+    margin-bottom:30px;
     outline:none;
     border-radius:4px;
     border:transparent;
 }
-.login{
+#login{
     width:300px;
     height:2em;
     background-color:rgba(228, 179, 20, 0.849);
@@ -113,6 +114,10 @@ body{
 }
 .pssForgot a{
     color:rgba(228, 179, 20, 0.849);
+}
+#emailErr, #passwordErr{
+    color:rgb(255,0,0);
+    display:block;
 }
 /* Create Account Page */
 .container2{
@@ -154,6 +159,7 @@ body{
     border:none;
     padding:10px;
 }
+
 .accountForm input:focus{
     outline:none;
 }
@@ -162,7 +168,7 @@ body{
     height:2em;
     font-size:22px;
     font-weight:bold;
-    border-radius:30px;
+    border-radius:3px;
     border:transparent;
     outline:none;
     background-color:rgba(228, 179, 20, 0.849);
@@ -182,12 +188,10 @@ body{
     color:rgba(228, 179, 20, 0.849);
 }
 /* Forgot password page */
-small{
-     visibility:hidden;
-}
+
 .footer{
     display:flex;
     width:100%;
     justify-content:center;
-    margin-top:150px;
+    margin-top:100px;
 }

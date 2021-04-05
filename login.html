@@ -19,12 +19,17 @@
             <h1>GamersHub</h1>
         </div>
         <div class="form">
-            <form name="login" method="POST" netlify>
+            <form name="login">
                 <label for="email">Email</label><br>
-                <input type="email" id="email" placeholder="Email/Username" maxlength="30"><br>
+                <input type="email" id="email" placeholder="Email/Username" maxlength="30">
+                <small id="emailErr"></small>
+                <br>
+                
                 <label for="password">Password</label><br>
-                <input type="password" id="password" placeholder=" Enter Password" !Important maxlength="20"><br>
-                <button class="login">Login</button>
+                <input type="password" id="password" placeholder=" Enter Password" !Important maxlength="20">
+                <small id="passwordErr"></small><br>
+                
+                <button id="login">Login</button>
             </form> 
         </div>
         <div class="pssForgot">
@@ -40,5 +45,6 @@
         
     </section>
     
+    <script src="main.js"></script>
 </body>
 </html>

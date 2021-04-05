@@ -1,14 +1,22 @@
-const form = document.getElementById('resetPass');
-const email = document.getElementsById('email');
 
-resetPass.addEventListener('login', myFunction());
 
-function myFunction(emailvalue, msgValue){
-    const emailValue = email.value.trim();
-    const msgValue = document.getElementsByClassName('resetMsge');
-    if(emailValue === ''){
-        // some message
+function checkForm(){
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    if(email==""){
+         let strMsge = document.getElementById("emailErr");
+         strMsge.innerHTML = "Field cannot be empty";
     }else{
-       // display the message in the small tag or the reset link message.
+       strMsge.innerHTML ="Details Successfully Captured";
+    }
+     if(password==""){
+         let passMsge = document.getElementById("passwordErr");
+         passMsge.innerHTML = "Password cannot be empty";
+    }else{
+        passMsge.innerHTML = "Success";
     }
 }
+
+const btn = document.getElementById("login");
+btn.addEventListener("click",checkForm);
